@@ -14,6 +14,6 @@ class Course(models.Model):
     description = models.TextField()
     title = models.CharField(max_length=255)
     sanitizedTitle = models.CharField(max_length=255)
-    category = models.ForeignKey(CourseCategory)
-    group = models.ForeignKey(CourseGroup)
+    category = models.ForeignKey(CourseCategory, null=True)
+    group = models.ForeignKey(CourseGroup, null=True)
     
