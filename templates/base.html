@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Lernado Store</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/css/main.css" />
+	<link rel="shortcut icon" type="image/png" href="/static/images/favicon.png" />
+	<script src="/static/js/jquery-1.4.2.min.js"></script>
+	<script src="/static/js/jquery.tools.min.js"></script>
+	<script src="/static/js/Markdown.Converter.js"></script>
+	<script src="/static/js/Markdown.Editor.js"></script>
+	<script src="/static/js/Markdown.Sanitizer.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="logo"></div>
+		<div id="navigation">
+			<ul id="nav" class="menu">
+				<li id="menu-item-1"
+					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-95 {% block home_menu %}{% endblock %}">
+					<a href="/">Home</a>
+				</li>
+				<li id="menu-item-2"
+					class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-95 {% block courses_menu %}{% endblock %}">
+					<a href="/courses/">Courses</a>
+				</li>
+				
+			</ul>
+		</div> <!-- end navigation -->
+	</div> <!-- end header -->
+	<div id="container">
+		<div id="content">
+			<div class="padder">
+				{% block content %}{% endblock %}
+			</div> <!-- end padder -->
+		</div> <!-- end content -->
+	
+	
+		<div  id="sidebar">
+			<div>
+				{% if user.is_authenticated %}
+					<div>
+						<span>						
+							<span style="color: green; font-family: Comic Sans, Comic Sans MS;">Welcome </span>  
+							<a class="connected-user" style="color: green; font-family: Comic Sans, Comic Sans MS;" href="{% url lernado.accounts.views.view_profile user_id=user.id %}">{{user.username}}&nbsp;&nbsp;</a> 						
+						</span>
+						<span><a style="color: red; font-family: Comic Sans, Comic Sans MS;" href="/accounts/logout">logout();</a></span>
+					</div>
+				{% endif %}
+				{% for sidebar_widget in sidebar_widgets %}
+					<div style="margin-top: 15px;">
+					{{sidebar_widget.contents|safe}}
+					</div>
+				{% endfor %}
+			</div>
+		</div> <!-- end sidebar -->
+	</div> <!-- end container -->
+	<div style="clear: both;"></div>
+	
+	<div id="footer">
+		<div class="site">
+			<div class="info">
+        			<div class="links">
+			<p>
+				<a href="/page/faq">faq</a> | <a href="/page/privacypolicy">privacy policy</a> | <a href="/page/contact">Contact</a>  
+			</p>
+			<p>
+				<!--  License  -->						
+			</p>
+			</div>
+			</div>
+		</div>
+	</div> <!-- footer end -->
+</body>
+</html>

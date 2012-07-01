@@ -1,0 +1,174 @@
+@import "globals";
+/* Start Forum CSS */
+
+.short-summary {
+    border-top: $short_summary_border_top;
+    float: left;
+    overflow: hidden;
+    padding: 3px 0 5px;
+    position: relative;
+    width: $short_summary_width;
+    
+    .counts {
+    	float: left;
+	    margin-right: 0;
+	    margin-top: 4px;
+	    padding-right: 2px;
+	    
+	    .item-count {
+	    	font-size: $short_summary_item_count_font-size;
+    		font-weight: bold;
+	    }
+    } 
+    
+    .votes, .views {
+    	color: $short_summary_votes_or_views_color;
+    }
+    
+    .votes, .status, .views {
+    	border-bottom: $short_summary_border-bottom;
+	    border-radius: $ROUNDED_BORDER_MEDIUM;
+	    border-right: $short_summary_right_border;
+	    float: left;
+	    font-size: $short_summary_font_size;
+	    height: $short_summary_height;
+	    margin: 0 6px 0 0;
+	    padding: 8px 2px 0;
+	    text-align: center;
+	    width: $question_count_width;	
+    }
+    
+    .question-summary-wrapper {
+    	float: right;
+    	width: $question_summary_wrapper_width;
+    }
+    
+    h2 {
+    	a {
+    		color: $short_summary_h2_link_color;
+    		font-family: $short_summary_h2_link_font-family;
+    		font-size: $short_summary_h2_link_font_size;	
+    	}
+    }
+    
+    .userinfo {
+    	color: $short_summary_userinfo_color;
+	    float: right;
+	    margin-top: 8px;
+    }
+}
+
+.score {
+    color: $score_color;
+    font-size: $score_font-size;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+	/* > Start Answer 
+-------------------------------------------------------------- */
+.headNormal {
+    border-bottom: $head_normal_border_bottom;
+    font-size: $head_normal_font_size;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding: 3px;
+    text-align: left;
+}
+
+.tabBar {
+    background-color: $tab_bar_background_color;
+    border-bottom: $tab_bar_border_bottom;
+    clear: both;
+    height: $tab_bar_height;
+    margin-bottom: 3px;
+    width: $tab_bar_width;
+}
+
+.headQuestions {
+    border-bottom: $head_questions_border_bottom;
+    float: left;
+    font-size: $head_questions_font_size;
+    font-weight: $head_questions_font_weight;
+    height: $head_questions_height;
+    line-height: $head_questions_line_height;
+    margin: 5px 0 0 5px;
+    padding: 0 6px 0 15px;
+}
+
+
+.question-body {
+    font-size: $question_body_font_size;
+    line-height: $question_body_line_height;
+    min-height: $question_body_min_height;
+    
+    img {
+    	max-width: $question_body_img_max_width;
+    }
+}
+
+.vote-buttons {
+    float: left;
+    text-align: center;
+}
+
+.answer {
+    border-bottom: $answer_border_bottom;
+    padding-top: 10px;
+    width: $answer_width;
+}
+
+.answer-body {
+    font-size: $answer_body_font_size;
+    line-height: $answer_body_line_height;
+    min-height: $answer_body_min_height;
+    
+    img {
+    	max-width: $answer_body_image_max_width;
+    }
+}
+
+.answered {
+    background: $answered_background;
+    color: $answered_color;
+}
+
+.unanswered {
+    background: $unanswered_background;
+    color: $unanswered_color;
+}
+
+.post-update-info {
+    display: inline-block;
+    float: right;
+    margin-bottom: 5px;
+    width: $post_update_info_display_width;
+}
+
+.post-score, .comments-char-left-count {
+    color: $post_score_color;
+    font-family: $post_score_font_family;
+    font-size: $post_score_font_size;
+    font-weight: bold;
+    padding: 0 0 3px;
+}
+
+.post {
+	
+	img {
+    	background: $post_img_background;
+    }
+    
+    &:hover {
+    	img {
+    		background: $post_hover_img_background;	
+    	}
+    }
+}
+
+.question-title {
+	font-weight: $question_title_font_weight; 
+	font-size: $question_title_font_size;
+}
+
+/* End Forum CSS */

@@ -1,1 +1,10 @@
-Hello Django World!
+{% extends "base.html" %}
+{% load markup %}
+{% block home_menu %}selected{% endblock %}
+{% block content %}
+<div class="home">
+
+{{content|markdown}}
+
+</div>
+{% endblock %}

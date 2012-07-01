@@ -1,0 +1,118 @@
+/* > Navigation
+-------------------------------------------------------------- */
+@import "globals";
+
+#nav {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 45px;
+	list-style: none;
+	max-width: 95%;
+	top:25px;
+	
+	ul {
+		border: $nav_ul_border;
+		-moz-box-shadow: $nav_ul_moz_box_shadow;
+		-webkit-box-shadow: $nav_ul_webkit_box_shadow;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius-topleft: 0;
+		-webkit-border-top-left-radius: 0;
+		-moz-border-radius-topright: 0;
+		-webkit-border-top-right-radius: 0;
+		
+		li {
+			ul {
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+			}
+		}
+	}
+	
+	li {
+	
+		margin-left: 5px;
+		float: left;
+		
+		li {
+			margin-left: 0;	
+		}
+	
+		a {
+			background: $nav_li_a_background;
+			color: $nav_li_a_color;
+			display: block;
+			padding: 5px 15px;
+			text-decoration: none;	
+		}
+	}
+}
+
+
+#nav > li > a {
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+}
+
+#nav li.selected a,
+#nav > li.current_page_item a {
+	background: $nav_selected_background;
+	color: $nav_selected_color;
+}
+#nav > li > ul {
+	border-top-width: 0;
+}
+#nav > ul li.sfhover a,
+#nav > ul li:hover a {
+	background: $nav_ul_li_hover_background;
+	color: $nav_ul_li_hover_color;
+}
+#nav li.sfhover,
+#nav li:hover {
+	position: relative;
+	z-index: 1000;
+}
+
+#nav ul,
+#nav .sfhover ul ul,
+#nav :hover ul ul {
+	left: -9999px;
+	position: absolute;
+}
+#nav .sfhover ul,
+#nav :hover ul {
+	left: 0;
+	top: 100%;
+	width: 128px;
+}
+#nav .sfhover ul li > a,
+#nav :hover ul li > a {
+	background: $nav_hover_ul_li_a_background;
+	color: $nav_hover_ul_li_a_background_color;
+}
+#nav .sfhover ul .sfhover > ul,
+#nav :hover ul :hover > ul {
+	left: 125px;
+	top: -1px;
+	width: 128px;
+}
+#nav ul li.sfhover > a,
+#nav ul li:hover > a {
+	background-color: $nav_ul_li_hover_a_background_color;
+	color: $nav_ul_li_hover_a_color;
+}
+#nav .sfhover ul li,
+#nav :hover ul li {
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+	width: 128px;
+}
+#nav .sfhover ul li a,
+#nav :hover ul li a {
+	padding: 0 0;
+}
+

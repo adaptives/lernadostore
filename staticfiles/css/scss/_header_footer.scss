@@ -1,0 +1,38 @@
+@import "globals";
+
+.logo{
+   float:left;
+   background: $logo_bg;
+   height: $logo_height;
+   width: $logo_width; 
+   margin: $logo_margins;   
+}
+
+
+#header {
+    background-image: $header_bg_image;
+	background-repeat:repeat-x;
+    color: $header_color;
+    height: $header_height;
+    position:relative;
+	width:100%;
+	z-index: 1000;
+	direction:ltr;
+	min-width: $min_width;
+	left:0;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+#footer {
+    background: $footer_background;
+    font-size: $root_font_size;
+    margin: $footer_margin;
+    padding: $footer_padding;
+    width: $footer_width;
+    
+    .links {
+    	text-align: center;
+		font-size: $root_font_size - 3;
+    }
+}

@@ -1,0 +1,166 @@
+@import "globals";
+
+.course-title {
+	font-size: $course_title_font_size;
+	font-weight: bold;
+}
+
+.course-description {
+	align: left;
+	font-size: $course_desccription_font_size;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.course-sections-title {
+	color: $course_sections_title_color;
+	font-size: $course_sections_title_font_size; 
+	border-bottom: solid 1px;	
+}
+
+.course-section-link {
+	color: $course_section_link_color;
+	margin: 5px;
+	
+	a {
+		text-decoration: none; 
+		font-size: $course_section_link_font_size;
+	}	
+}
+
+.course-enrollment {
+	color: $course_enrollment_fg_color;
+    text-decoration: none;
+    background: $course_enrollment_bg_color;
+    padding: 2px 10px;
+    
+    a {
+    	text-decoration: none;
+    }
+}
+
+.course-drop {
+	color: $course_enrollment_fg_color;
+    text-decoration: none;
+    background: $course_drop_bg_color;
+    padding: 2px 10px;
+    
+    a {
+    	text-decoration: none;
+    }
+}
+
+/* Recent addition for the current list */
+.grid {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+	position:relative;
+	
+	img {
+		background: $grid_img_bg;
+    	border: $grid_img_border;
+    	border-radius: $grid_img_border_radius
+	}
+	
+	hr {
+		background-color: $grid_hr_bg_color;
+	    border: 0 none;
+	    color: $grid_hr_fg_color;
+	    height: 6px;
+	    margin: 5px 0 0px;
+		width:100%;
+	}
+}
+
+.comentwrap{
+    background: $comentwrap_bg_color;
+    border: $comentwrap_border;
+    border-radius: $comentwrap_border_radius;
+    box-shadow: $comentwrap_box_shadow;
+    font-size: $comentwrap_font_size;
+    line-height: $comentwrap_line_height;
+    margin-top: $comentwrap_margin_top;
+    padding: $comentwrap_padding;
+    position: relative;
+}
+
+.comentwrappost-title{
+    color: $comentwrap_post_title_fg_color;
+    font-size: $comentwrap_post_title_font_size;
+    font-weight: bold;
+}
+	
+.comentwrappost-datetime{
+    color: $comentwrappost_datetime_fg_color;
+    font-size: $comentwrappost_datetime_font_size;
+    font-weight: normal;
+    line-height: $comentwrappost_datetime_line_height;
+	padding-top: $comentwrappost_datetime_padding_top;
+	font-family: $comentwrappost_datetime_font_family;
+}
+	
+.comentwrappost-course {
+    color: $comentwrappost_course_fg_color;
+    font-size: $comentwrappost_course_font_size;
+    font-weight: bold;
+	padding-top: $comentwrappost_course_top_padding;
+	font-family: $comentwrappost_course_font_family;
+	
+	img {
+		background: $comentwrappost_course_img_background;
+	    border: $comentwrappost_course_img_border;
+	    border-radius: $comentwrappost_course_img_border_radius;
+	    padding: $comentwrappost_course_img_padding;
+	}
+}
+	
+.post-box {
+    margin: $ZERO_PX;
+    overflow: hidden;
+}
+
+.pep{
+	float: left;
+	padding: $pep_padding;
+}
+
+.peptext{
+	padding-top: $pep_text_padding_top;
+	font-size: $pep_text_font_size;
+	font-weight: bold;
+	color: $pep_text_color;
+}
+
+.pepcomentwrap{
+    background: $pepcomentwrap_bg_color;
+    border: $pepcomentwrap_border;
+    border-radius: $pepcomentwrap_border_radius;
+    box-shadow: $pepcomentwrap_box_shadow;
+    float: right;
+    font-size: $pepcomentwrap_font_size;
+    line-height: $pepcomentwrap_line_height;
+    margin-top: $pepcomentwrap_margin_top;
+    padding: $pepcomentwrap_padding;
+    position: relative;
+	bottom: $pepcomentwrap_bottom;
+}
+
+
+.reviewed {
+    color: $GREEN
+}
+	/* > End inner 
+-------------------------------------------------------------- */
+
+/* course category header
+-------------------------------------------------------------- */
+
+.course-category-header {
+	margin-top: $course_category_header_margin_top;
+	padding: $course_category_header_padding;
+	font-weight: bold; 
+	font-size: $course_category_header_font_size; 
+	background: $course_category_header_background;
+	color: $course_category_header_fg_color;
+}

@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "globals";
+
+body {
+    background-color: $root_bg_color;
+    background-image: $root_bg_image;
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: $root_fg_color;
+    font-family: $root_font_family;
+    font-size: $root_font_size;
+    line-height: $root_line_height;
+    margin: 0 auto;
+    min-width: $min_width;
+    padding-top: 0 !important;
+    width: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: $all_headers_margins;
+	line-height: $all_headers_line_height;
+}
+h1 {
+	font-size: $h1_font_size;
+	margin-bottom: $h1_margin_bottom;
+}
+h2 {
+	font-size: $h1_font_size - 4px;
+	margin-bottom: $h1_margin_bottom - 5px;	
+}
+h3 {
+	font-size: $h1_font_size - 8px;
+}
+h4 {
+	font-size: $h1_font_size - 12px;
+	margin-bottom: $h1_margin_bottom - 10px;
+}
+h5 {
+	font-size: $h1_font_size - 14px;
+	margin-bottom: 0;
+}
+h6 {
+	font-size: $h1_font_size - 16px;
+	margin-bottom: 0;
+}
+
+.error {
+	background: $error_bg_color;
+	color: $error_fg_color;
+	font-weight: bold;	
+}
+
+.success {
+	background: $success_bg_color;
+	color: $success_fg_color;
+	font-weight: bold;
+}
+
+ol {
+	list-style-position: inside;	
+}
+
+ul {
+	list-style-position: inside;
+}
+
+
+
+a {
+    color: $global_link_color;
+    text-decoration: $global_link_text_decoration;
+    
+    &:hover {
+    	color: $global_link_hover_color;
+    	text-decoration: $global_link_hover_text_decoration;
+    }
+}
+
+p {
+    margin: 0 0 20px;
+    margin-bottom: 15px;
+}
