@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "globals";
+
+/* > Container
+-------------------------------------------------------------- */
+div#container {
+    background: $container_bg;
+    border-bottom: $container_border_bottom;
+    border-radius: $container_border_radius;
+    border-right: $content_sidebar_divider;
+    overflow: hidden;
+    position: relative;
+    width: $container_width;
+	max-width: $container_max_width;
+    min-width: $container_min_width;
+	margin: 0 auto;
+}
+
+div#content {
+    border-bottom-left-radius: $content_bottom_left_radius;
+    border-top-left-radius: $content_top_left_radius;
+    float: left;
+    width: 100%;
+    
+    .padder {
+    	border-bottom-left-radius: $padder_bottom_left_radius;
+    	border-top-left-radius: $padder_top_left_radius;
+    	border-right: $padder_right_border;
+    	margin-right: $padder_right_margin;
+    	padding: $padder_padding;
+    	text-align:justify;
+    }
+}
+
+
+div#sidebar {
+    background: $sidebar_background;
+    border-left: $sidebar_border-left;
+    border-top-right-radius: $sidebar_border-top-right-radius;
+    float: left;
+    margin-left: $sidebar_margin-left;
+    margin-top: $sidebar_margin-top;
+    width: $sidebar_width;
+	padding-left:$sidebar_padding-left;
+	line-height: $sidebar_line-height;
+	font-size: $sidebar_font-size;
+	
+	li {
+		list-style:none;
+	}
+}
+
+
+

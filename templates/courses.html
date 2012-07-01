@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block courses_menu %}selected{% endblock %}
+{% block content %}
+<div class="courses">
+
+	<div style="margin-left: 5px; margin-bottom: 10px;">
+		<span style="padding-bottom: 4px; font-family: Comic Sans, Comic Sans MS; font-size: 1.4em; font-weight: bold; color: green;">Online courses to help you become an awesome software developer !</span>
+	</div>
+	{% if courses %}
+		<p class="course-category-header">
+			Courses
+		</p>
+		<ul>
+		{% for course in courses %}
+			<div class="post-box">
+			
+			</div>
+			<div class="comentwrap">
+				<div class="grid">
+				 	<a href="">
+				 		<img src="/static/images/default_course_image.gif" border="0" width="40" height="40" />
+				 	</a>
+				 </div>
+				 <div class="comentwrappost-title"> 
+				 	<a href="">{{course.title}}</a>			 	
+				 </div>
+				 
+				 <div class="comentwrappost-course"> 
+				 	
+				 </div>
+				 
+			</div>
+		{% endfor %}
+		</ul>
+		<p>&nbsp;</p>
+	{% endif %}
+</div>
+{% endblock %}

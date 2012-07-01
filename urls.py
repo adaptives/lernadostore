@@ -7,6 +7,7 @@ from django.conf.urls.defaults import patterns, include, url
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'lernadostore.views.home', name='home'),
+    url(r'^courses/', 'lernadostore.courses.views.courses', name="courses"),
     # url(r'^lernadostore/', include('lernadostore.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

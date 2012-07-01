@@ -1,0 +1,201 @@
+$ZERO_PX: 0px;
+$GREEN: green;
+$ROUNDED_BORDER_SMALL: 4px 4px 4px 4px;
+$ROUNDED_BORDER_MEDIUM: 5px 5px 5px 5px;
+$ROUNDED_BORDER_LARGE: 6px 6px 6px 6px;
+
+
+$root_bg_color: #f1f1f1;
+$root_fg_color: #555555;
+$root_bg_image: url(../images/background.gif);
+$root_font_family: Arial,Tahoma,Verdana,sans-serif;
+$root_font_size: 12px;
+$root_line_height: 170%;
+$min_width: 960px;
+
+$blockquote_bg_color: #EEE;
+
+$all_headers_margins: 5px 0 15px 0;
+$all_headers_line_height: 125%;
+$h1_font_size: 28px;
+$h1_margin_bottom: 25px;
+
+$error_bg_color: #c00;
+$error_fg_color: white;
+$success_bg_color: #54BD06;
+$success_fg_color: white;
+
+$logo_bg: url(../images/full_logo.png) no-repeat;
+$logo_height: 54px;
+$logo_width: 450px;
+$logo_margins: 0px 10px 0px 10px;
+
+$header_bg_image: url(../images/header.jpg);
+$header_color: #FFFFFF;
+$header_height: 88px;
+
+$container_bg: none repeat scroll 0 0 #FFFFFF;
+$container_border_bottom: 1px solid #E0E0E0;
+$container_border_radius: 6px 6px 6px 6px;
+$content_sidebar_divider: 1px solid #F1F1F1;
+$container_width: 90%;
+$container_max_width: 1250px;
+$container_min_width: 960px;
+
+$content_bottom_left_radius: 6px;
+$content_top_left_radius: 6px;
+
+$padder_bottom_left_radius: 6px;
+$padder_top_left_radius: 6px;
+$padder_right_border: 1px solid #DDDDDD;
+$padder_right_margin: 225px;
+$padder_padding: 15px;
+
+$sidebar_background: url(../images/sidebar_back.gif) repeat-x scroll left top transparent;
+$sidebar_border-left: 1px solid #DDDDDD;
+$sidebar_border-top-right-radius: 3px;
+$sidebar_margin-left: -226px;
+$sidebar_margin-top: 1px;
+$sidebar_width: 214px;
+$sidebar_padding-left:10px;
+$sidebar_line-height: 150%;
+$sidebar_font-size:95%;
+
+$global_link_color:#4183C4;
+$global_link_text_decoration: none;
+$global_link_hover_color: #819137;
+$global_link_hover_text_decoration: underline;
+
+$footer_background: none repeat scroll 0 0 #F1F1F1;
+$footer_margin: 20px 0 0;
+$footer_padding: 20px 0 15px;
+$footer_width: 90%;
+
+
+$subnavmain_bg: url(/static/images/sub_bg.png) repeat-x;
+$subnav_bottom_border_color: #4183C4;
+$subnav_option_bg_color: #98b7d7;
+$subnav_option_fg_color: #0e2c4b;
+$subnav_option_selected_bg_color: #4183C4;
+$subnav_option_selected_fg_color: #fff;
+
+$course_title_font_size: 16px;
+$course_desccription_font_size: 1.2em;
+$course_sections_title_color: #364B66;
+$course_sections_title_font_size: 1.4em;
+$course_section_link_color: #364B66;
+$course_section_link_font_size: 1.3em;
+$course_enrollment_fg_color: #fff;
+$course_enrollment_bg_color: #82A346;
+$course_drop_bg_color: red;
+$grid_img_bg: none repeat scroll 0 0 #FFFFFF;
+$grid_img_border: 2px solid #CCCCCC;
+$grid_img_border_radius: 4px 4px 4px 4px;
+$grid_hr_bg_color: #D3CFBD;
+$grid_hr_fg_color: #D3CFBD;
+$comentwrap_bg_color: #F8F8F8;
+$comentwrap_border: 1px solid #FFFFFF;
+$comentwrap_border_radius: 5px 5px 5px 5px;
+$comentwrap_box_shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+$comentwrap_font_size: 16px;
+$comentwrap_line_height: 24px;
+$comentwrap_margin_top: 15px;
+$comentwrap_padding: 10px 10px;
+$comentwrap_post_title_fg_color: #5ac1d0;
+$comentwrap_post_title_font_size: 16px;
+$comentwrappost_datetime_fg_color: #1FB3DD;
+$comentwrappost_datetime_font_size: 11px;
+$comentwrappost_datetime_line_height: 1px;
+$comentwrappost_datetime_padding_top: 20px;
+$comentwrappost_datetime_font_family: Tahoma;
+$comentwrappost_course_fg_color: #444444;
+$comentwrappost_course_font_size: 12px;
+$comentwrappost_course_top_padding: 20px;
+$comentwrappost_course_font_family: Tahoma;
+$comentwrappost_course_img_background: none repeat scroll 0 0 #FFFFFF;
+$comentwrappost_course_img_border: 2px solid #CCCCCC;
+$comentwrappost_course_img_border_radius: 4px 4px 4px 4px;
+$comentwrappost_course_img_padding: 30px;
+$pep_padding: 8px;
+$pep_text_padding_top: 8px;
+$pep_text_font_size: 12px;
+$pep_text_color: #819137;
+$pepcomentwrap_bg_color: #FFFFFF;
+$pepcomentwrap_border: 1px solid #F7F7F7;
+$pepcomentwrap_border_radius: 5px 5px 5px 5px;
+$pepcomentwrap_box_shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+$pepcomentwrap_font_size: 16px;
+$pepcomentwrap_line_height: 14px;
+$pepcomentwrap_margin_top: 5px;
+$pepcomentwrap_padding: 5px 5px;
+$pepcomentwrap_bottom: 60px;
+
+$course_category_header_margin_top: 10px;
+$course_category_header_padding: 4px;
+$course_category_header_font_size: 1.4em;
+$course_category_header_background: url( ../images/box-lighter.png );
+$course_category_header_fg_color: #fff;
+
+$short_summary_border_top: 1px dotted #CCCCCE;
+$short_summary_width: 700px;
+$short_summary_votes_or_views_color: #666666;
+$short_summary_right_border: 1px solid #CCCCCC;
+$short_summary_border-bottom: 1px solid #CCCCCC;
+$short_summary_font_size: 11px;
+$short_summary_height: 42px;
+$question_count_width: 46px;
+$short_summary_item_count_font-size: 17px;
+$question_summary_wrapper_width: 565px;
+$short_summary_h2_link_color: #2A5594;
+$short_summary_h2_link_font_family: "Trebuchet MS","segoe ui",arial,sans-serif;
+$short_summary_h2_link_font_size: 17px;
+$short_summary_userinfo_color: #666666;
+$score_color: #333333;
+$score_font-size: 110%;
+$head_normal_border_bottom: 1px solid #777777;
+$head_normal_font_size: 15px;
+$tab_bar_background_color: #FFFFFF;
+$tab_bar_border_bottom: 1px solid white;
+$tab_bar_height: 30px;
+$tab_bar_width: 100%;
+$head_questions_border_bottom: 0 solid #777777;
+$head_questions_font_size: 15px;
+$head_questions_font_weight: 700;
+$head_questions_height: 23px;
+$head_questions_line_height: 23px;
+$question_body_font_size: 13px;
+$question_body_line_height: 20px;
+$question_body_min_height: 100px;
+$question_body_img_max_width: 640px;
+$answer_border_bottom: 1px solid #CCCCCE;
+$answer_width: 100%;
+$answer_body_font_size: 13px;
+$answer_body_line_height: 20px;
+$answer_body_min_height: 80px;
+$answer_body_image_max_width: 640px;
+$answered_background: none repeat scroll 0 0 #E5EBF8;
+$answered_color: #314362;
+$unanswered_background: none repeat scroll 0 0 #F3E3E1;
+$unanswered_color: #6B2B28;
+$post_update_info_display_width: 190px;
+$post_score_color: #777777;
+$post_score_font_family: Arial;
+$post_score_font_size: 165%;
+$post_img_background: url(../images/vote-arrow-up.png) no-repeat scroll center center transparent;
+$post_hover_img_background: url(../images/vote-arrow-up-on.png) no-repeat scroll center center transparent;
+$question_title_font_weight: bold; 
+$question_title_font_size: 120%;
+
+$nav_li_a_background: url( ../images/box.png );
+$nav_li_a_color: #fff;
+$nav_selected_background: #f5f5f5;
+$nav_selected_color: #555;
+$nav_ul_li_hover_background: #333;
+$nav_ul_li_hover_color: #fff;
+$nav_ul_border: 1px solid #222;
+$nav_ul_moz_box_shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$nav_ul_webkit_box_shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$nav_hover_ul_li_a_background: #333;
+$nav_hover_ul_li_a_background_color: #fff;
+$nav_ul_li_hover_a_background_color: #222;
+$nav_ul_li_hover_a_color: #fff;
